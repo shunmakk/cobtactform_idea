@@ -1,0 +1,73 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+    <title>大人っぽいお問い合わせフォーム</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <section id="contact">
+  
+        <h1 class="section-header">お問い合せフォーム</h1>
+        
+        <div class="contact-wrapper">
+        
+        
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required="">
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required="">
+              </div>
+            </div>
+      
+            <textarea class="form-control" row="20" placeholder="MESSAGE" name="message" required=""></textarea>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+             送信
+            </button>
+            
+          </form>
+           
+            <div class="direct-contact-container">
+           
+              <ul class="contact-list">
+
+                <hr>
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">東京都練馬区</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:070-4141-3418" title="Give me a call">070-4141-3418</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:shunmakajioka12@gmail.com" title="Send me an email">shunma11@gmail.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              
+      
+              <div class="copyright">© ALL OF THE RIGHTS RESERVED</div>
+      
+            </div>
+          
+        </div>
+        
+      </section>  
+      <script>
+        //メールを初期化する
+        document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
+      </script>
+
+</body></html>
