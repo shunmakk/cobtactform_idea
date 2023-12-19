@@ -116,7 +116,8 @@ textarea::placeholder{
   }
 }
 
-@media(min-width:601px){
+/* 1000px以上の時、要素を真ん中にする */
+@media(min-width:1000px){
   table{
 display: flex;
 justify-content: center;
